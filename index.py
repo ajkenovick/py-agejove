@@ -12,6 +12,11 @@ def about():
     # return "Acerca de Agejove.co"
      return render_template('about.html')
 
+@app.route('/contact')
+def contact():
+    # return "Acerca de Agejove.co"
+     return render_template('contact.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
