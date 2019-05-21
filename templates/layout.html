@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agejove.co</title>
-    <!-- Boostrap -->
+    <!-- Boostrap 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Creado empirico -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> 
+    <!-- Creado empirico 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
+	
+	 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'> 
 	
 	<!-- Bootstrap CSS file -->
 		<link rel="stylesheet" href=  "{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" />
@@ -22,44 +25,113 @@
 
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="/" ><img src="{{ url_for('static', filename='images/mierdita_marimonda.png') }}" width="30" height="30"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                   <!--  <li class="nav-item active">
-                      <a class="nav-link" href="#">Acerca de <span class="sr-only">(current)</span></a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="about">Acerca De</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact">Contactenos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+       
+	<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Navegación móvil</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="logo" href="/"><img alt="Maryal Lácteos" src="{{ url_for('static', filename='images/mierdita_marimonda.png') }}" width="50" height="40"/></a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li id="index"><a href="./">Inicio <span class="sr-only">(activo)</span></a></li>
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nosotros<span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="/quienes-somos.php">Quienes somos</a></li>
+									<li><a href="/nuestros-valores.php">Nuestros valores</a></li>
+								</ul>
+							</li>
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Productos<span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="/quienes-somos.php">Yogures</a></li>
+									<li><a href="/nuestros-valores.php">Arroz con leche</a></li>
+								</ul>
+							</li>
+														
+							<li id="pedidos"><a href="/contactenos.php">Pedidos</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+					<div class="clearfix"></div>
+				</div><!--/.container-fluid -->
+			</nav>
 
-  
+    <!-- Contenido central -->  
     <div class="container p-4">
         {% block content %}
         {% endblock %}
     </div>
-    
+   <!-- Contenido central -->   
+   
+	<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="logo-footer"><img src="images/logo-beable-footer.png"></div>
+						<h4>Mapa del sitio</h4>
+						<ul class="sitemap">
+							<li><a href="/">Inicio</a></li>
+							<li><a href="/quienes-somos.php">Quienes somos</a></li>
+							<li><a href="/metodologia.php">Nuestros productos</a></li>
+							<li><a href="/contactenos.php">Pedidos</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-md-5 sabores-footer">
+						
+						<h4 id="sabores-footer">Yogur artesanal con toppins de...</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<ul class="lista-sabores">
+									<li>Fresa</li>
+									<li>Mango</li>
+									<li>Mora</li>
+									<li>Banano</li>
+									<li>Kiwi</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<ul class="lista-sabores">
+									<li>Durazno</li>
+									<li>Melocotón</li>
+									<li>Guayaba</li>
+									<li>Piña</li>
+									<li>Brownie</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-2 sabores-footer">
+						<h4 id="maracuya-footer">Yogurt artesanal de Maracuyá</h4>
+						<h4 id="arroz-footer">Arroz con leche artesanal</h4>
+						<p class="big">¿Está interesado en nuestros productos?</p>
+						<a id="calltoaction-pedidos" href="/contactenos.php">Pedidos</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-text">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 copyright">
+							Maryal Lácteos © 2019. Todos los derechos reservados.    
+						</div>
+						<div class="col-md-3 text-right social">
+							<a class="glyph-icon flaticon-social122" target=_blank href="https://www.facebook.com/maryal.lacteos/"></a>
+							<a class="glyph-icon flaticon-social123" target=_blank href="https://www.instagram.com/maryal.lacteos/"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
 </body>
 </html>

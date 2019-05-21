@@ -54,10 +54,15 @@ html {
 }
 
 body {
-    background: #fff; /* Fallback for when there is no custom background color defined. */
-    /*height: 100%;*/
+   /* background: #fff; /* Fallback for when there is no custom background color defined. */
+    /*height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0; */
+	
+	background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 }
 
 article,
@@ -153,6 +158,12 @@ body {
     /*line-height: 1.1;*/
     color: #4c4c4c;
     padding-top: 131px;
+	
+	
+	background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 }
 
 p {
@@ -867,41 +878,25 @@ footer .sitemap li {
     margin-bottom: 20px;
 }
 
-.servicios-footer h4 {
+.sabores-footer h4 {
     margin: 10px 0;
     padding-bottom: 3px;
 }
 
-.servicios-footer ul.lista-seminarios li {
+.sabores-footer ul.lista-sabores li {
     margin-bottom: 10px;
 }
 
-h4#seminarios-footer {
-    border-bottom: 2px solid #bb141b;
-}
-
-h4#coaching-footer {
-    border-bottom: 2px solid #a019b9;
-}
-
-h4#outdoors-footer {
-    border-bottom: 2px solid #f36e21;
-}
-
-h4#disc-footer {
-    border-bottom: 2px solid #153ed6;
-}
-
-h4#programas-footer {
+h4#sabores-footer {
     border-bottom: 2px solid #3bb919;
 }
 
-h4#freshbiz-footer {
-    border-bottom: 2px solid #db1c8b;
+h4#arroz-footer {
+    border-bottom: 2px solid #a019b9;
 }
 
-h4#lego-footer {
-    border-bottom: 2px solid #865c22;
+h4#maracuya-footer {
+    border-bottom: 2px solid #f36e21;
 }
 
 p.big {
@@ -909,11 +904,11 @@ p.big {
     margin: 20px 0 30px;
 }
 
-a#calltoaction-contactenos {
+a#calltoaction-pedidos {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     padding: 20px 39px;
-    background: url(../images/btn-contactanos.png) no-repeat center;
+    background: url(../../images/btn-pedidos.png) no-repeat center;
     text-shadow: 0px -1px 0px rgba(171, 72, 18, 0.5);
     color: #fff;
 }
