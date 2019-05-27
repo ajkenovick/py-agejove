@@ -8,8 +8,8 @@ $(function () {
         $(this).parent().addClass("active");
     });
 
-    $('.navbar-nav>li>a.active').removeClass("active");
-    $('.navbar-nav>li#' + $('body').attr('id')).addClass("active");
+  /*   $('.navbar-nav>li>a.active').removeClass("active");
+    $('.navbar-nav>li#' + $('body').attr('id')).addClass("active"); */
 
     /** Mobile **/
 
