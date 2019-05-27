@@ -1,26 +1,27 @@
-$(function() {
+$(function () {
+
 
     /** Menu **/
 
-    $('.navbar-nav>li>a').click(function(){
+    $('.navbar-nav>li>a').click(function () {
         $('.navbar-nav>li>a').removeClass("active");
         $(this).parent().addClass("active");
     });
 
-    $('.navbar-nav>li>a.active').removeClass("active");    
+    $('.navbar-nav>li>a.active').removeClass("active");
     $('.navbar-nav>li#' + $('body').attr('id')).addClass("active");
 
     /** Mobile **/
 
     checkIfMobile();
 
-    $( window ).resize(function() {
+    $(window).resize(function () {
         checkIfMobile();
     });
 
     function checkIfMobile() {
-        if($('.navbar-toggle').css('display') == 'block') {  //Si es móvil
-           if($('.slider-servicios').length) {
+        if ($('.navbar-toggle').css('display') == 'block') {  //Si es móvil
+            if ($('.slider-servicios').length) {
                 /*$('.slider-servicios').removeClass('slider-servicios');*/
                 $('ul').removeClass('bxslider');
             }
@@ -35,18 +36,18 @@ $(function() {
 
     var headerMini = false;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         /*console.log($(this).scrollTop());
         console.log($('.slider-servicios .bx-wrapper').outerHeight(true));*/
-    
+
         if ($(this).scrollTop() > 50) {
-            if(!headerMini) {
+            if (!headerMini) {
                 /* Sticky header */
-                $('.logo img').animate({width:'60%'}, 300, function() {
+                $('.logo img').animate({ width: '60%' }, 300, function () {
                     //callback
                 });
-                $('.navbar-nav>li').animate({marginTop:'0'}, 300, function() {
+                $('.navbar-nav>li').animate({ marginTop: '0' }, 300, function () {
                     //callback
                 });
 
@@ -56,12 +57,12 @@ $(function() {
             }
         }
         else {
-            if(headerMini) {
+            if (headerMini) {
                 /* Sticky header */
-                $('.logo img').animate({width:'100%'}, 300, function() {
+                $('.logo img').animate({ width: '100%' }, 300, function () {
                     //callback
                 });
-                $('.navbar-nav>li').animate({marginTop:'15px'}, 300, function() {
+                $('.navbar-nav>li').animate({ marginTop: '15px' }, 300, function () {
                     //callback
                 });
 
@@ -87,14 +88,14 @@ $(function() {
         } else {
         wrap.removeClass("fix-search");
         }*/
-      
+
     });
 
     /** Slider servicios **/
 
-    $(window).load(function() {
+    $(window).load(function () {
 
-        if($('.navbar-toggle').css('display') == 'none') {
+        if ($('.navbar-toggle').css('display') == 'none') {
             $('.slider-servicios .bxslider li').css('display', 'table');
 
             $('.bxslider').bxSlider({
@@ -106,11 +107,11 @@ $(function() {
             var activeTop = 0;
             var clicked;
 
-            $('.slider-servicios #bx-pager a').click(function() {
+            $('.slider-servicios #bx-pager a').click(function () {
                 clicked = $(this);
-                setTimeout(function(){
-                    activeTop = clicked.position().top + (clicked.outerHeight(true)/4);
-                    $('#pointer').animate({top:activeTop}, 300, function() {
+                setTimeout(function () {
+                    activeTop = clicked.position().top + (clicked.outerHeight(true) / 4);
+                    $('#pointer').animate({ top: activeTop }, 300, function () {
                         //callback
                     });
                 }, 200);
@@ -127,30 +128,30 @@ $(function() {
 
 
     $('.bxslider-galeria').bxSlider({
-            pagerCustom: '#bx-pager',
-            mode: 'vertical',
-            controls: false,
-            onSliderLoad: function(){
-                
-            }
-        });
+        pagerCustom: '#bx-pager',
+        mode: 'vertical',
+        controls: false,
+        onSliderLoad: function () {
+
+        }
+    });
 
     $('.bxslider-fotos').bxSlider({
-                    /*mode: 'vertical',
-                    controls: false*/
-                    /*slideWidth: 500*/
-                    /*minSlides: 3,
-                    maxSlides: 3,*/
-                    preloadImages: 'visible',
-                    slideWidth: 640,
-                    /*slideMargin: 20,*/
-                    pager: false,
-                    auto: true,
-                    autoStart: true
-                });
-    
+        /*mode: 'vertical',
+        controls: false*/
+        /*slideWidth: 500*/
+        /*minSlides: 3,
+        maxSlides: 3,*/
+        preloadImages: 'visible',
+        slideWidth: 640,
+        /*slideMargin: 20,*/
+        pager: false,
+        auto: true,
+        autoStart: true
+    });
 
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
@@ -159,8 +160,8 @@ $(function() {
 
     function initialize() {
         var myLatlng = new google.maps.LatLng(4.698641, -74.030561);
-       	
-		var mapOptions = {
+
+        var mapOptions = {
             zoom: 16,
             center: myLatlng
         }
@@ -173,7 +174,7 @@ $(function() {
         });
     }
 
-    if ($('#contactenos').length){
+    if ($('#contactenos').length) {
         google.maps.event.addDomListener(window, 'load', initialize);
 
         /** Send Contact **/
@@ -185,7 +186,7 @@ $(function() {
         var formMessages = $('#form-messages');
 
         // Set up an event listener for the contact form.
-        $(form).submit(function(event) {
+        $(form).submit(function (event) {
             // Stop the browser from submitting the form.
             event.preventDefault();
 
@@ -197,7 +198,7 @@ $(function() {
                 type: 'POST',
                 url: $(form).attr('action'),
                 data: formData
-            }).done(function(response) {
+            }).done(function (response) {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass('error');
                 $(formMessages).addClass('success');
@@ -210,7 +211,7 @@ $(function() {
                 $('#email').val('');
                 $('#telefono').val('');
                 $('#mensaje').val('');
-            }).fail(function(data) {
+            }).fail(function (data) {
                 // Make sure that the formMessages div has the 'error' class.
                 $(formMessages).removeClass('success');
                 $(formMessages).addClass('error');
@@ -226,5 +227,5 @@ $(function() {
     }
 
 
-    
+
 });

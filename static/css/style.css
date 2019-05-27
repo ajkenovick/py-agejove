@@ -58,12 +58,9 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #FFEFBA;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+
+    background-image: url("../../static/images/fruits-background.png");   
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section {
@@ -127,11 +124,10 @@ body {
     /*line-height: 1.1;*/
     color: #4c4c4c;
     padding-top: 131px;
-    background: #FFEFBA;
+     /* background: #F8EFBA;  */
+     background-image: url("../../static/images/fruits-background.png");  
 
-
-    background-image: url("../../static/images/yogur-fondo.jpg");
-
+     
 }
 
 p {
@@ -284,14 +280,17 @@ span.highlight4 {
     box-shadow: none;
     border: 0 none;
     padding: 20px 0 10px;
-   /*  background-color: #fff;  */
+    /* background-color: #fff;   */
     margin-bottom: 0;
 
-     /* fallback for old browsers */
-     background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-     /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to right, #FFFFFF, #FFEFBA);
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-image: url("../../static/images/518.png"); */
+
+     background: #fff;
+     /* background-image: url("../../static/images/zenbg-1.png"), url("../../static/images/zenbg-2.png");
+     background-repeat: repeat-x, repeat; */
+
+
+    
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -844,6 +843,11 @@ footer .sitemap li {
     margin-bottom: 10px;
 }
 
+.sitemap .social a {
+    color: #ad2b13;
+    font-size: 3em;
+}
+
 .logo-footer {
     margin-bottom: 20px;
 }
@@ -901,7 +905,7 @@ a#calltoaction-pedidos {
 
 .footer-text .social a {
     color: #fff;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -1059,3 +1063,5 @@ a#calltoaction-pedidos {
         margin-left: -52px;
     }
 }
+
+
