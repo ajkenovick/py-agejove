@@ -104,7 +104,8 @@ hr {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    height: 0
+    height: 0;
+
 }
 
 pre {
@@ -1420,7 +1421,8 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #f3a683
+    border-top: 5px double #ad2b13;
+    width: 60%;
 }
 
 .sr-only {
@@ -5019,6 +5021,8 @@ a.badge:hover, a.badge:focus {
     margin-bottom: 30px;
     color: inherit;
     background-color: #ffda79;
+    -webkit-box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.1);
 }
 
 .jumbotron h1, .jumbotron .h1 {
@@ -5032,7 +5036,9 @@ a.badge:hover, a.badge:focus {
 }
 
 .jumbotron>hr {
-    border-top-color: #f3a683;
+     border-top-color: #f3a683; 
+    height:3px; 
+    border:none;
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
