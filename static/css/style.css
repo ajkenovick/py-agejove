@@ -60,7 +60,7 @@ body {
     padding: 0;
    
 
-    background-image: url("../../static/images/fruits-background.png");   
+    background-image: url("../../static/images/comida_fondo.png");   
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section {
@@ -125,7 +125,7 @@ body {
     color: #4c4c4c;
     padding-top: 131px;
      /* background: #F8EFBA;  */
-     background-image: url("../../static/images/fruits-background.png");  
+     background-image: url("../../static/images/comida_fondo.png");  
 
      
 }
@@ -1077,6 +1077,7 @@ a#calltoaction-pedidos {
   
   #notfound .notfound {
     position: absolute;
+  
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -1101,7 +1102,7 @@ a#calltoaction-pedidos {
   }
   
   .notfound .notfound-404 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'giorgioregular', sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1120,7 +1121,7 @@ a#calltoaction-pedidos {
   }
   
   .notfound h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'giorgioregular', sans-serif;
     font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1137,7 +1138,7 @@ a#calltoaction-pedidos {
   }
   
   .notfound .notfound-search>input {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'giorgioregular', sans-serif;
     width: 100%;
     height: 50px;
     padding: 3px 65px 3px 30px;
