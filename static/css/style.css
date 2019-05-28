@@ -398,7 +398,7 @@ span.highlight4 {
 
 .banner-home {
     height: 500px;
-    background: url(../images/fondo-home.jpg) no-repeat right top;
+    background: url(../images/fondo-home.png) no-repeat right top;
     position: relative;
 }
 
@@ -915,7 +915,7 @@ a#calltoaction-pedidos {
 @media (max-width: 1243px) {
     /** Home **/
     .banner-home {
-        background: url(../images/fondo-home.jpg) no-repeat left top;
+        background: url(../images/fondo-home.png) no-repeat left top;
     }
     #btn-home-seminarios {
         top: 66px;
@@ -964,7 +964,7 @@ a#calltoaction-pedidos {
     }
     /** Home **/
     .banner-home {
-        background: url(../images/fondo-home-991.jpg) no-repeat left top;
+        background: url(../images/fondo-home-991.png) no-repeat left top;
         height: 444px;
     }
     #btn-home-seminarios {
@@ -1020,7 +1020,7 @@ a#calltoaction-pedidos {
     }
     /** Home **/
     .banner-home {
-        background: url(../images/fondo-home-767.jpg) no-repeat left top;
+        background: url(../images/fondo-home-767.png) no-repeat left top;
         height: 344px;
     }
     .banner-home a {
