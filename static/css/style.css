@@ -200,6 +200,7 @@ h1.section-title {
 }
 
 ul {
+    font-family: 'giorgioregular', sans-serif;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -207,9 +208,15 @@ ul {
 
 ul li {
     /* background-image: url(../images/bullet.png); */
-    background-repeat: no-repeat;
-    background-position: 0px 3px;
+    /* background-repeat: no-repeat;
+    background-position: 0px 3px; */
     padding-left: 20px;
+}
+
+ ul.lista-sabores li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
 }
 
 .bxslider li, .bxslider-galeria li, .bxslider-fotos li {
