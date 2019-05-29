@@ -1365,13 +1365,14 @@ input, button, select, textarea {
     line-height: inherit
 }
 
+/*enlace principal*/
 a {
     color: #337ab7;
     text-decoration: none
 }
 
 a:hover, a:focus {
-    color: #23527c;
+    color: #23527c; 
     text-decoration: underline
 }
 
