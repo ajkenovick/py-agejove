@@ -1236,5 +1236,20 @@ a#calltoaction-pedidos {
   
 
 /*--------------------------------------------------------------
-10.0 ZZZZ
+10.0 Tag Image
 --------------------------------------------------------------*/
+
+figure {
+    position: relative
+  }
+  figcaption {
+    position: absolute;
+    width: 320px;
+    line-height: 120px;
+     text-align: center; 
+    left: 0;
+    top: 0; 
+    text-shadow: 0 0 1px white;
+    font-weight:bold;
+    color: #000;
+  }
