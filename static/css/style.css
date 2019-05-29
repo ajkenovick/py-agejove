@@ -120,7 +120,7 @@ body {
     font-family: 'Open Sans', sans-serif, 'giorgioregular'; 
     font-size: 14px;
     /*line-height: 1.1;*/
-    color: #4c4c4c;
+    /* color: #4c4c4c; */
     padding-top: 131px;
      /* background: #F8EFBA;  */
      background-image: url("../../static/images/comida_fondo.png");  
