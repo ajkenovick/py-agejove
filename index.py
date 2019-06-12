@@ -4,10 +4,15 @@ from flask_mysqldb import MySQL
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'admin'
-app.config['MYSQL_PASSWORD'] = 'R@OT01'
-app.config['MYSQL_DB'] = 'maryaldb'
+# app.config['MYSQL_HOST'] = 'localhost'
+# app.config['MYSQL_USER'] = 'admin'
+# app.config['MYSQL_PASSWORD'] = 'R@OT01'
+# app.config['MYSQL_DB'] = 'maryaldb'
+
+app.config['MYSQL_HOST'] = 'bjk6j3hpiuryjkh0f9ny-mysql.services.clever-cloud.com'
+app.config['MYSQL_USER'] = 'ur18vgcthjclsxhy'
+app.config['MYSQL_PASSWORD'] = 'BPnezAsVCyAdJeEzjKu0'
+app.config['MYSQL_DB'] = 'bjk6j3hpiuryjkh0f9ny'
 
 mysql = MySQL(app)
 
